@@ -1,243 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developer portfolio | Johanna Krantz</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
     <!-- Google Fonts kommer i CSS-steget -->
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="site-header">
-        <nav class="main-nav">
-            <a href="#home" class="logo">
-                <span class="logo-tag">{JK}</span>
-                <span class="logo-name">Johanna</span>
-            </a>
-            <button class="nav-toggle">
-                <!-- ikon / hamburgermeny -->
-                ☰
-            </button>
+      <nav class="main-nav">
+        <a href="#home" class="logo">
+          <span class="logo-tag">{JK}</span>
+          <span class="logo-name">Johanna</span>
+        </a>
+        <button class="nav-toggle">
+          <!-- ikon / hamburgermeny -->
+          ☰
+        </button>
 
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Sociala länkar -->
-        <ul class="social-links">
-            <li><a href="#" aria-label="Twitter profile">Twitter</a></li>
-            <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
-            <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+
+      <!-- Sociala länkar -->
+      <ul class="social-links">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
     </header>
 
     <main id="home">
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-content">
-                <p class="hero-greeting">Hi, 👋</p>
-                <h1 id="hero-title">My name is Johanna</h1>
-                <p class="hero-subtitle">I build things for the web.</p>
-                <div class="hero-image">
-                    <img src="./assets/images/johanna_krantz-22-klar a bit cropped 3.jpg" alt="Portrait of Johanna, web developer">
-                </div>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-content">
+          <p class="hero-greeting">Hi, 👋</p>
+          <h1 id="hero-title">My name is Johanna</h1>
+          <p class="hero-subtitle">I build things for the web.</p>
+          <div class="hero-image">
+            <img
+              src="./assets/images/johanna_krantz-22-klar a bit cropped 3.jpg"
+              alt="Portrait of Johanna, web developer" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="section-about">
+        <h2 id="about-title">About Me</h2>
+        <p>
+          I am a web developer based in Stockholm, focusing on responsive,
+          accessible interfaces and clean code.
+        </p>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="experience" class="section-experience">
+        <h2 id="experience-title">Work Experience</h2>
+
+        <article class="experience-item">
+          <h3>
+            Frontend Web Developer
+            <span class="employment-type">(Full Time)</span>
+          </h3>
+          <img
+            src="./assets/icons/building.txt"
+            alt="building icon"
+            class="exp-icon" />
+          <p class="experience-company">Company Name here</p>
+          <p class="experience-location">Bengaluru</p>
+          <p class="experience-dates">Sep 2021 – Dec 2021</p>
+        </article>
+
+        <article class="experience-item">
+          <h3>Internship <span class="employment-type">(Internship)</span></h3>
+          <p class="experience-company">Company Name here</p>
+          <p class="experience-location">Bengaluru</p>
+          <p class="experience-dates">Sep 2021 – Dec 2021</p>
+        </article>
+
+        <article class="experience-item">
+          <h3>Internship <span class="employment-type">(Internship)</span></h3>
+          <p class="experience-company">Company Name here</p>
+          <p class="experience-location">Bengaluru</p>
+          <p class="experience-dates">Sep 2021 – Dec 2021</p>
+        </article>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section-education">
+        <h2 id="education-title">Education</h2>
+
+        <article class="education-item">
+          <h3>
+            Frontend Development
+            <span class="employment-type">(Full Time)</span>
+          </h3>
+          <p class="education-school">Udemy, YouTube, Google, Medium</p>
+          <p class="education-location">Online</p>
+          <p class="education-dates">Jan 2022 – Present</p>
+        </article>
+
+        <article class="education-item">
+          <h3>
+            Bachelor in Electronics &amp; Communication
+            <span class="employment-type">(Full Time)</span>
+          </h3>
+          <p class="education-school">Your College Name here</p>
+          <p class="education-location">Bengaluru</p>
+          <p class="education-dates">Aug 2020 – Present</p>
+        </article>
+      </section>
+
+      <section id="tech-stack-tools" class="section-tech-stack-tools">
+        <h2>My Tech Stack</h2>
+        <p>Technologies I use regularly:</p>
+
+        <ul class="tech-grid">
+          <li>
+            <img
+              src="images/tech/html5.svg"
+              alt="HTML5 icon"
+              class="tech-icon" />
+          </li>
+          <li>
+            <img src="images/tech/css3.svg" alt="CSS3 icon" class="tech-icon" />
+          </li>
+          <li>
+            <img
+              src="images/tech/javascript.svg"
+              alt="JavaScript icon"
+              class="tech-icon" />
+          </li>
+          <li>
+            <img
+              src="images/tech/react.svg"
+              alt="React icon"
+              class="tech-icon" />
+          </li>
+          <li>
+            <img src="images/tech/git.svg" alt="Git icon" class="tech-icon" />
+          </li>
+          <li>
+            <img
+              src="images/tech/github.svg"
+              alt="GitHub icon"
+              class="tech-icon" />
+          </li>
+        </ul>
+
+        <h2>Tools</h2>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section-projects">
+        <h2 id="projects-title">Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="images/project-1.jpg" alt="Screenshot of project 1" />
+            <div class="project-content">
+              <h3>Project title goes here</h3>
+              <p>Short description of the project, tech stack and purpose.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
             </div>
-        </section>
+          </article>
 
-        <!-- About Me -->
-        <section id="about" class="section-about">
-            <h2 id="about-title">About Me</h2>
-            <p>
-                I am a web developer based in Stockholm, focusing on
-                responsive, accessible interfaces and clean code.
-            </p>
-        </section>
+          <article class="project-card">
+            <img src="images/project-2.jpg" alt="Screenshot of project 2" />
+            <div class="project-content">
+              <h3>Project title goes here</h3>
+              <p>Another project description, matching the design.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-        <!-- Work Experience -->
-        <section id="experience" class="section-experience">
-            <h2 id="experience-title">Work Experience</h2>
+          <article class="project-card">
+            <img src="images/project-2.jpg" alt="Screenshot of project 2" />
+            <div class="project-content">
+              <h3>Project title goes here</h3>
+              <p>Another project description, matching the design.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-            <article class="experience-item">
-                <h3>Frontend Web Developer <span class="employment-type">(Full Time)</span></h3>
-                <img src="./assets/icons/building.txt" alt="building icon" class="exp-icon">
-                <p class="experience-company">Company Name here</p>
-                <p class="experience-location">Bengaluru</p>
-                <p class="experience-dates">Sep 2021 – Dec 2021</p>
-            </article>
+          <article class="project-card">
+            <img src="images/project-2.jpg" alt="Screenshot of project 2" />
+            <div class="project-content">
+              <h3>Project title goes here</h3>
+              <p>Another project description, matching the design.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-            <article class="experience-item">
-                <h3>Internship <span class="employment-type">(Internship)</span></h3>
-                <p class="experience-company">Company Name here</p>
-                <p class="experience-location">Bengaluru</p>
-                <p class="experience-dates">Sep 2021 – Dec 2021</p>
-            </article>
+          <article class="project-card">
+            <img src="images/project-2.jpg" alt="Screenshot of project 2" />
+            <div class="project-content">
+              <h3>Project title goes here</h3>
+              <p>Another project description, matching the design.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-            <article class="experience-item">
-                <h3>Internship <span class="employment-type">(Internship)</span></h3>
-                <p class="experience-company">Company Name here</p>
-                <p class="experience-location">Bengaluru</p>
-                <p class="experience-dates">Sep 2021 – Dec 2021</p>
-            </article>
-        </section>
+          <article class="project-card">
+            <img src="images/project-2.jpg" alt="Screenshot of project 2" />
+            <div class="project-content">
+              <h3>Project title goes here</h3>
+              <p>Another project description, matching the design.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <!-- Education -->
-        <section id="education" class="section-education">
-            <h2 id="education-title">Education</h2>
-
-            <article class="education-item">
-                <h3>Frontend Development <span class="employment-type">(Full Time)</span></h3>
-                <p class="education-school">Udemy, YouTube, Google, Medium</p>
-                <p class="education-location">Online</p>
-                <p class="education-dates">Jan 2022 – Present</p>
-            </article>
-
-            <article class="education-item">
-                <h3>Bachelor in Electronics &amp; Communication <span class="employment-type">(Full Time)</span></h3>
-                <p class="education-school">Your College Name here</p>
-                <p class="education-location">Bengaluru</p>
-                <p class="education-dates">Aug 2020 – Present</p>
-            </article>
-
-
-           <section id="tech-stack" class="section-tech-stack">
-    <h2>My Tech Stack</h2>
-    <p>Technologies I use regularly:</p>
-
-    <ul class="tech-grid">
-        <li>
-            <img src="images/tech/html5.svg" alt="HTML5 icon" class="tech-icon">
-        </li>
-        <li>
-            <img src="images/tech/css3.svg" alt="CSS3 icon" class="tech-icon">
-        </li>
-        <li>
-            <img src="images/tech/javascript.svg" alt="JavaScript icon" class="tech-icon">
-        </li>
-        <li>
-            <img src="images/tech/react.svg" alt="React icon" class="tech-icon">
-        </li>
-        <li>
-            <img src="images/tech/git.svg" alt="Git icon" class="tech-icon">
-        </li>
-        <li>
-            <img src="images/tech/github.svg" alt="GitHub icon" class="tech-icon">
-        </li>
-    </ul>
-</section>
-
-            <!-- Projects -->
-            <section id="projects" class="section-projects">
-                <h2 id="projects-title">Projects</h2>
-
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <img src="images/project-1.jpg" alt="Screenshot of project 1">
-                        <div class="project-content">
-                            <h3>Project title goes here</h3>
-                            <p>
-                                Short description of the project, tech stack and purpose.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="images/project-2.jpg" alt="Screenshot of project 2">
-                        <div class="project-content">
-                            <h3>Project title goes here</h3>
-                            <p>
-                                Another project description, matching the design.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="images/project-2.jpg" alt="Screenshot of project 2">
-                        <div class="project-content">
-                            <h3>Project title goes here</h3>
-                            <p>
-                                Another project description, matching the design.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="images/project-2.jpg" alt="Screenshot of project 2">
-                        <div class="project-content">
-                            <h3>Project title goes here</h3>
-                            <p>
-                                Another project description, matching the design.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="images/project-2.jpg" alt="Screenshot of project 2">
-                        <div class="project-content">
-                            <h3>Project title goes here</h3>
-                            <p>
-                                Another project description, matching the design.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="images/project-2.jpg" alt="Screenshot of project 2">
-                        <div class="project-content">
-                            <h3>Project title goes here</h3>
-                            <p>
-                                Another project description, matching the design.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Contact -->
-            <section id="contact" class="section-contact">
-                <h2 id="contact-title">Contact</h2>
-                <p>
-                    For any questions please mail me at:
-                    <a href="mailto:johanna@example.com">johanna@example.com</a>
-                </p>
-            </section>
+      <!-- Contact -->
+      <section id="contact" class="section-contact">
+        <h2 id="contact-title">Contact</h2>
+        <p>
+          For any questions please mail me at:
+          <a href="mailto:johanna@example.com">johanna@example.com</a>
+        </p>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <p>Designed and coded by Johanna</p>
+      <p>Designed and coded by Johanna</p>
     </footer>
-</body>
-
+  </body>
 </html>
