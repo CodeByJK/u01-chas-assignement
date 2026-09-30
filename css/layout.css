@@ -1,0 +1,114 @@
+/* ===========================
+   layout.css – structure
+   =========================== */
+
+ 
+/* navigation    */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+
+/* hero  */
+.hero-image{
+  margin-top: 2rem;
+}
+
+
+/* experience & education */
+.experience-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  border-bottom: 3px solid #EBEAED;
+}
+
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-company,
+.experience-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  
+}
+.section-education {
+  padding-top: 0rem;
+}
+
+
+/* Tech Stack & Tools */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.tech-stack-description {
+  margin-bottom: 2rem;
+}
+
+.tools-title {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+/* media queries    */
+
+@media (min-width: 768px) {
+  .main-nav {
+    flex-wrap: nowrap;
+  }
+
+  .nav-links {
+    flex-basis: auto;
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
