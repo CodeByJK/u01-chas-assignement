@@ -3,12 +3,27 @@
    =========================== */
 
  
-/* navigation    */
+/* Navigation    */
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 5rem;
+
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--color-bg-light);
 }
 
 .nav-links {
@@ -28,13 +43,13 @@
 }
 
 
-/* hero  */
+/* Hero  */
 .hero-image{
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 
-/* experience & education */
+/* Experience & education */
 .experience-item {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -88,10 +103,41 @@
 }
 
 
+/* Projects – Layout */
 
+.section-projects {
+  padding-top: 5rem;
+}
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
-/* media queries    */
+#projects-title {
+  margin-bottom: 2.5rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-link-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Contact */
+.section-contact {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Desktop */
 
 @media (min-width: 768px) {
   .main-nav {
@@ -110,5 +156,9 @@
 
   .tech-grid {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

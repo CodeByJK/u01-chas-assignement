@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
-    <!-- Google Fonts kommer i CSS-steget -->
   </head>
 
   <body>
     <header class="site-header">
       <nav class="main-nav">
-        <a href="#home" class="logo">
-          <span class="logo-tag">{JK}</span>
-          <span class="logo-name">Johanna</span>
-        </a>
-        <button class="nav-toggle">
-          <img
-            src="assets/logos/burger-simple-svgrepo-com.svg"
-            alt="Open menu" />
-        </button>
+        <div class="nav-top">
+          <a href="#home" class="logo">
+            <span class="logo-tag">{JK}</span>
+            <span class="logo-name">Johanna</span>
+          </a>
+
+          <button class="nav-toggle">
+            <img
+              src="assets/logos/burger-simple-svgrepo-com.svg"
+              alt="Open menu" />
+          </button>
+        </div>
 
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -63,10 +65,10 @@
           <p class="hero-text">Hi,👋</p>
           <p class="hero-text">My name is</p>
           <h1 class="hero-name">Johanna</h1>
-          <p class="hero-text">I build things for the web.</p>
+          <p class="hero-text">I build things for the web</p>
           <div class="hero-image">
             <img
-              src="assets/images/JK-pic.jpg"
+              src="/assets/images/IMG_20260704_080844.jpg"
               alt="Portrait of Johanna, web developer" />
           </div>
         </div>
@@ -276,9 +278,7 @@
               class="tech-icon" />
           </li>
         </ul>
-
         <h2 class="tools-title">Tools</h2>
-
         <ul class="tech-grid">
           <li>
             <img
@@ -329,70 +329,122 @@
         <h2 id="projects-title">Projects</h2>
 
         <div class="projects-grid">
+          <!-- Project 1 -->
           <article class="project-card">
             <img
               src="assets/project-pics/adrian-infernus-GLf7bAwCdYg-unsplash.jpg"
-              alt="Screenshot of project 1" />
+              alt="Screenshot of Project 1"
+              class="project-image" />
+
             <div class="project-content">
               <h3>Project title 1</h3>
+
               <p>
                 Here goes the text about the project. Short description and
                 purpose. Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Fuga, voluptate!
               </p>
-              <p><strong>Tech Stack:</strong> HTML/CSS, JavaScript</p>
+
+              <p class="project-tech">
+                <strong>Tech Stack:</strong> HTML/CSS, JavaScript
+              </p>
+
               <div class="project-links">
-                <img
-                  src="assets/logos/akar-icons--link-chain.svg"
-                  alt="link-logo" />
-                <a href="#" class="project-link">Live Preview</a>
-                <img
-                  src="assets/logos/akar-icons--github-fill.svg"
-                  alt="github-logo" />
-                <a href="#" class="project-link">View Code</a>
+                <div class="project-link-group">
+                  <img
+                    src="assets/logos/akar-icons--link-chain.svg"
+                    alt=""
+                    class="project-link-icon" />
+                  <a href="#" class="project-link">Live Preview</a>
+                </div>
+
+                <div class="project-link-group">
+                  <img
+                    src="assets/logos/akar-icons--github-fill.svg"
+                    alt=""
+                    class="project-link-icon" />
+                  <a href="#" class="project-link">View Code</a>
+                </div>
               </div>
             </div>
           </article>
 
+          <!-- Project 2 -->
           <article class="project-card">
             <img
               src="assets/project-pics/pawel-czerwinski-wtljKRoxsZE-unsplash.jpg"
-              alt="Screenshot of project 2" />
+              alt="Screenshot of Project 2"
+              class="project-image" />
+
             <div class="project-content">
               <h3>Project title 2</h3>
+
               <p>
                 Here goes the text about the project. Short description and
                 purpose. Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Fuga, voluptate!
               </p>
-              <p><strong>Tech Stack:</strong> HTML/CSS, JavaScript</p>
+
+              <p class="project-tech">
+                <strong>Tech Stack:</strong> HTML/CSS, JavaScript
+              </p>
+
               <div class="project-links">
-                <img
-                  src="assets/logos/akar-icons--link-chain.svg"
-                  alt="link-logo" />
-                <a href="#" class="project-link">Live Preview</a>
-                <img
-                  src="assets/logos/akar-icons--github-fill.svg"
-                  alt="github-logo" />
-                <a href="#" class="project-link">View Code</a>
+                <div class="project-link-group">
+                  <img
+                    src="assets/logos/akar-icons--link-chain.svg"
+                    alt=""
+                    class="project-link-icon" />
+                  <a href="#" class="project-link">Live Preview</a>
+                </div>
+
+                <div class="project-link-group">
+                  <img
+                    src="assets/logos/akar-icons--github-fill.svg"
+                    alt=""
+                    class="project-link-icon" />
+                  <a href="#" class="project-link">View Code</a>
+                </div>
               </div>
             </div>
           </article>
 
+          <!-- Project 3 -->
           <article class="project-card">
             <img
               src="assets/project-pics/pawel-czerwinski-WUNJtzRFJq4-unsplash.jpg"
-              alt="Screenshot of project 2" />
+              alt="Screenshot of Project 3"
+              class="project-image" />
+
             <div class="project-content">
               <h3>Project title 3</h3>
+
               <p>
                 Here goes the text about the project. Short description and
                 purpose. Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Fuga, voluptate!
               </p>
+
+              <p class="project-tech">
+                <strong>Tech Stack:</strong> HTML/CSS, JavaScript
+              </p>
+
               <div class="project-links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">GitHub</a>
+                <div class="project-link-group">
+                  <img
+                    src="assets/logos/akar-icons--link-chain.svg"
+                    alt=""
+                    class="project-link-icon" />
+                  <a href="#" class="project-link">Live Preview</a>
+                </div>
+
+                <div class="project-link-group">
+                  <img
+                    src="assets/logos/akar-icons--github-fill.svg"
+                    alt=""
+                    class="project-link-icon" />
+                  <a href="#" class="project-link">View Code</a>
+                </div>
               </div>
             </div>
           </article>
@@ -404,13 +456,15 @@
         <h2 id="contact-title">Contact</h2>
         <p>
           For any questions please mail me at:
-          <a href="mailto:johanna@example.com">johanna@example.com</a>
+          <a href="mailto:johanna@example.com" class="contact-email"
+            >johanna@example.com</a
+          >
         </p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Designed and coded by Johanna</p>
+      <p>Designed and coded by <span class="footer-name">Johanna</span></p>
     </footer>
   </body>
 </html>
