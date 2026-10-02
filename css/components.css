@@ -2,6 +2,11 @@
    components.css – visual
    =========================== */
 
+/* Logo */
+.logo:hover {
+  text-decoration: none;
+}
+
 /* Nav section*/
 .nav-links {
   font-weight: 600;
@@ -162,4 +167,43 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  /* Hero section */
+  .hero-text,
+  .hero-name {
+    font-size: 3.625rem; /* 58px */
+    font-weight: 700;
+    line-height: 4.375rem; /* 70px */
+    letter-spacing: -0.0625rem; /* -1px */
+    margin-bottom: 0s;
+  }
+
+  h2 {
+    font-size: 2.625rem; /* 42px */
+    font-weight: 700;
+    line-height: 3.25rem; /* 52px */
+    letter-spacing: -0.025rem; /* -0.4px */
+  }
+
+  .hero-image {
+    width: 21.8125rem; /* 349px */
+    height: 21.8125rem; /* 349px */
+    flex-shrink: 0;
+    padding: 0.5625rem; /* 9px */
+    border-radius: 50%;
+  }
+
+  /* Contact */
+  .section-contact h2,
+  .section-contact p,
+  .section-contact .contact-email {
+    font-family: "DM Sans", sans-serif;
+    font-size: 3.625rem; /* 58px */
+    font-weight: 700;
+    line-height: 4.375rem; /* 70px */
+    letter-spacing: -0.0625rem; /* -1px */
+  }
 }

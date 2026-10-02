@@ -2,7 +2,6 @@
    layout.css – structure
    =========================== */
 
- 
 /* Navigation    */
 .main-nav {
   display: flex;
@@ -10,7 +9,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 5rem;
-
 }
 
 .nav-top {
@@ -42,12 +40,10 @@
   gap: 7rem;
 }
 
-
 /* Hero  */
-.hero-image{
+.hero-image {
   margin-top: 3rem;
 }
-
 
 /* Experience & education */
 .experience-item {
@@ -55,8 +51,8 @@
   grid-template-columns: 1fr auto;
   gap: 2rem;
   margin-bottom: 2rem;
-    padding-bottom: 2rem;
-  border-bottom: 3px solid #EBEAED;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #ebeaed;
 }
 
 .experience-info {
@@ -77,12 +73,10 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 0.5rem;
-  
 }
 .section-education {
   padding-top: 0rem;
 }
-
 
 /* Tech Stack & Tools */
 .tech-grid {
@@ -101,7 +95,6 @@
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-
 
 /* Projects – Layout */
 
@@ -138,27 +131,92 @@
 }
 
 /* Desktop */
-
 @media (min-width: 768px) {
+  /* Navigation */
+
+  body {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 6rem;
+    right: 7rem;
+    /* width: 100%; */
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    background-color: var(--color-bg-light);
+  }
+
   .main-nav {
+    flex: 1;
     flex-wrap: nowrap;
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .nav-top {
+    position: static;
+    width: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
   }
 
   .nav-links {
     flex-basis: auto;
     flex-direction: row;
-    margin-left: auto;
+    align-items: center;
+    margin: 0 0 0 auto;
+    gap: 2rem;
   }
 
   .nav-toggle {
     display: none;
   }
 
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+  }
+
+  /* Hero */
+  .hero {
+    margin-top: 5rem;
+    margin-bottom: 2rems;
+  }
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-image {
+    margin-top: 0;
+  }
+
+  /* Sections */
+  .section-about,
+  .section-experience,
+  .section-education {
+    max-width: 44rem;
+  }
+
+  /* Technologies */
   .tech-grid {
     grid-template-columns: repeat(6, 1fr);
   }
 
+  /* Projects */
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
