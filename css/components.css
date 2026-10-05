@@ -12,6 +12,10 @@
   font-weight: 600;
 }
 
+.nav-links a {
+  color: var(--color-text-black);
+}
+
 .nav-toggle {
   border: none;
   background: transparent;
@@ -25,11 +29,14 @@
   transition: transform 0.2s ease;
 }
 
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
 .nav-toggle:hover img,
 .nav-toggle:focus-visible img {
   transform: scale(1.1);
-  outline: 2px solid var(--color-accent);
-  outline-offset: 4px;
 }
 
 .social-links img {
@@ -58,7 +65,7 @@
 }
 
 .hero-name {
-  background: linear-gradient(90deg, #13b0f5, #e70faa);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -69,7 +76,7 @@
   height: 250px;
   padding: 6px;
   border-radius: 50%;
-  background: linear-gradient(1deg, #13b0f5, #e70faa);
+  background: linear-gradient(1deg, #0066CC, #E70FAA); 
 }
 
 .hero-image img {
@@ -162,7 +169,7 @@
 /* Contact */
 .contact-email {
   display: block;
-  background: linear-gradient(90deg, #13b0f5, #e70faa);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -172,18 +179,13 @@
   text-decoration: underline;
 }
 
-a:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 4px;
-}
-
 .section-contact p {
   color: var(--color-heading-secondary);
 }
 
 /* Footer */
 .footer-name {
-  background: linear-gradient(90deg, #13b0f5, #e70faa);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -224,13 +226,14 @@ a:focus-visible {
   }
 
   .experience-info h3 {
-    font-size: 1.2rem;
-    font-weight: 100;
+    font-size: 1.2rem; /* 19.2px */
+    font-weight: 400;
   }
 
   .experience-info {
-    font-size: 0.7rem; /*11.2px*/
-    font-weight: 100;
+    font-size: 0.875rem;  /* 14px */
+    font-weight: 600;
+    color: var(--color-muted-text);
   }
 
   .employment-type,
@@ -239,7 +242,7 @@ a:focus-visible {
   }
 
   .project-tech {
-    font-size: 0.9rem;
+    font-size: 0.9rem; 
   }
 
   /* Contact */
