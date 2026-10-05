@@ -28,7 +28,7 @@
     --color-text-black: #ffffff;
     --color-muted-text: #bdbdbd;
     --color-accent: #8b7cff;
-}
+  }
 }
 
 /* Reset */
@@ -85,6 +85,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 a:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 4px;
@@ -117,10 +121,10 @@ a:focus-visible {
   font-weight: 600;
 }
 
-
 /* Sections */
 section {
   padding: var(--spacing-section) 1.5rem;
+  scroll-margin-top: 8rem;
 }
 
 /* Images */
