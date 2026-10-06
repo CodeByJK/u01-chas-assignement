@@ -19,16 +19,20 @@ Layout och responsivitet
 
 Jag använder både Flexbox och Grid eftersom de passar för olika typer av layout och har olika styrkor. De kompletterar också varandra bra när de används tillsammans.
 Flexbox passar när layouten huvudsakligen är endimensionell, exempelvis i navigationen, sociala länkar och hero-sektionen. På desktop har .hero-content:
+
 .hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 Här placeras texten på ena sidan och bilden på den andra. space-between fördelar utrymmet och align-items: center centrerar innehållet vertikalt.
 Grid passar när jag behöver kontrollera både rader och kolumner, exempelvis i experience-sektionen, Tech Stack och projektkorten. På desktop har projektkorten:
+
 .projects-grid {
   grid-template-columns: repeat(3, 1fr);
 }
+
 Tre 1fr skapar tre lika stora kolumner eftersom 1fr delar upp det tillgängliga utrymmet. På mobil använder jag 1fr så att korten visas i en kolumn.
 
 På desktop används display: contents på .experience-info så att dess barn kan ingå direkt i .experience-item-elementets Grid-layout. Det gör att jag kan placera h3 över två kolumner medan företag och plats hamnar i egna kolumner.
