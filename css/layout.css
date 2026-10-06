@@ -2,7 +2,7 @@
    layout.css – structure
    =========================== */
 
-/* Navigation    */
+/* Navigation */
 .main-nav {
   display: flex;
   align-items: center;
@@ -40,12 +40,12 @@
   gap: 7rem;
 }
 
-/* Hero  */
+/* Hero */
 .hero-image {
   margin-top: 3rem;
 }
 
-/* Experience & education */
+/* Experience & Education */
 .experience-item {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -100,7 +100,7 @@
   margin-bottom: 2rem;
 }
 
-/* Projects – Layout */
+/* Projects */
 
 .section-projects {
   padding-top: 5rem;
@@ -134,7 +134,7 @@
   margin-top: 3rem;
 }
 
-/* Desktop */
+/* Desktop Layout */
 @media (min-width: 768px) {
   
     main {
@@ -221,7 +221,7 @@
     grid-template-columns: repeat(6, 1fr);
   }
 
-  /* Experience & education */
+  /* Experience & Education */
   .experience-item {
     display: grid;
     grid-template-columns: max-content max-content 1fr;

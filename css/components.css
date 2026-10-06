@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 
-/* Nav section*/
+/* Navigation */
 .nav-links {
   font-weight: 600;
 }
@@ -50,7 +50,7 @@
   transform: scale(1.2);
 }
 
-/* Hero section */
+/* Hero */
 .hero-text,
 .hero-name {
   font-size: 2rem;
@@ -86,7 +86,7 @@
   border-radius: 50%;
 }
 
-/* Experience & education section */
+/* Experience & Education */
 .experience-item h3 {
   font-size: 1.25rem;
   font-weight: 600;
@@ -115,7 +115,7 @@
   color: var(--color-muted-text);
 }
 
-/* Tech Stack & Tools section */
+/* Tech Stack & Tools */
 .tech-icon {
   width: 8rem;
   height: 8rem;
@@ -191,7 +191,7 @@
   color: transparent;
 }
 
-/* Darkmode */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   .project-card {
     border: 1px solid #333333;
@@ -202,7 +202,7 @@
   }
 }
 
-/* Desktop */
+/* Desktop Layout*/
 @media (min-width: 768px) {
   /* Hero section */
   .hero-text,
@@ -246,7 +246,7 @@
   }
 
   .project-tech {
-    font-size: 0.9rem;
+    font-size: 0.9rem;  /* 14.4px */
   }
 
   /* Contact */
