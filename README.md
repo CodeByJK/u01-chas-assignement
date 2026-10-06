@@ -3,6 +3,9 @@
 ## Publicerad sida
 https://deluxe-gumption-4f4082.netlify.app/
 
+## Designskiss [Originaldesign i Figma]: 
+https://www.figma.com/design/ikRGSB3qPVQzgyeMCrCM4S/Developer-Portfolio-Design?node-id=0-1&p=f&t=H0b7oqlB5WhoET4A-0
+
 ## Från designskiss till kod
 Jag började med att studera Figma-skissen för att förstå hur sidan var uppbyggd, vilka färger och typsnitt som användes, spacing och hur layouten ändrades mellan mobil och desktop. Jag började med mobil-layouten eftersom det var en instruktion från läraren att arbeta mobile-first. Jag byggde först HTML-strukturen och sedan CSS och delade upp CSS:en i base.css för globala regler, layout.css för struktur och layout och components.css för visuell styling.
 
@@ -55,6 +58,7 @@ Jag valde 768px som breakpoint eftersom det är en vanlig utgångspunkt för min
 ## Tillgänglighet
 
 Jag har tänkt på tillgänglighet både i HTML och CSS. Bilder som innehåller information har beskrivande alt-texter och dekorativa ikoner har alt="". Jag har också lagt till :focus-visible så att fokus syns när sidan används med tangentbord.
+
 Jag kontrollerade färgkontrasten och upptäckte att vissa färgkombinationer från Figma-skissen inte uppfyllde WCAG AA. Jag justerade därför vissa färger för att få bättre kontrast samtidigt som jag försökte vara så nära Figma-skissen som möjligt. 
 
 Jag har testat sidan på flera sätt:
