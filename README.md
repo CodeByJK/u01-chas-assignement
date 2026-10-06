@@ -62,18 +62,12 @@ Jag har tänkt på tillgänglighet både i HTML och CSS. Bilder som innehåller 
 Jag kontrollerade färgkontrasten och upptäckte att vissa färgkombinationer från Figma-skissen inte uppfyllde WCAG AA. Jag justerade därför vissa färger för att få bättre kontrast samtidigt som jag försökte vara så nära Figma-skissen som möjligt. 
 
 Jag har testat sidan på flera sätt:
-
-HTML-validatorn gav 0 fel.
-
-Jag testade navigering med tangentbord och Tab-tangenten.
-
-Lighthouse gav 100 % Accessibility i både ljust och mörkt läge.
-
-Jag testade den publicerade sidan i Chrome och Firefox.
-
-Eftersom jag använder Windows testade jag Safari via BrowserStack och fick 100 % på accessibility-testet.
-
-Jag testade även dark mode och kontrollerade att text och ikoner fortfarande var läsbara.
+- HTML-validatorn gav 0 fel.
+- Jag testade navigering med tangentbord och Tab-tangenten.
+- Lighthouse gav 100 % Accessibility i både ljust och mörkt läge.
+- Jag testade den publicerade sidan i Chrome och Firefox.
+- Eftersom jag använder Windows testade jag Safari via BrowserStack och fick 100 % på accessibility-testet.
+- Jag testade även dark mode och kontrollerade att text och ikoner fortfarande var läsbara.
 
 Jag använder prefers-color-scheme för att följa användarens systeminställning för dark mode. Vissa SVG-ikoner syntes dåligt mot den mörka bakgrunden, så jag använder filter: invert(1) på dessa i dark mode.
 
