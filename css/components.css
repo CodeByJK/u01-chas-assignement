@@ -76,7 +76,7 @@
   height: 250px;
   padding: 6px;
   border-radius: 50%;
-  background: linear-gradient(1deg, #0066CC, #E70FAA); 
+  background: linear-gradient(1deg, #0066cc, #e70faa);
 }
 
 .hero-image img {
@@ -196,6 +196,10 @@
   .project-card {
     border: 1px solid #333333;
   }
+  .social-links img,
+  .nav-toggle img {
+    filter: invert(1);
+  }
 }
 
 /* Desktop */
@@ -231,7 +235,7 @@
   }
 
   .experience-info {
-    font-size: 0.875rem;  /* 14px */
+    font-size: 0.875rem; /* 14px */
     font-weight: 600;
     color: var(--color-muted-text);
   }
@@ -242,7 +246,7 @@
   }
 
   .project-tech {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 
   /* Contact */
