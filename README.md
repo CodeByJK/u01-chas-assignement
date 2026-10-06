@@ -1,15 +1,15 @@
-Developer Portfolio
+# Developer Portfolio
 
-Publicerad sida
+## Publicerad sida
 https://deluxe-gumption-4f4082.netlify.app/
 
-Från designskiss till kod
+## Från designskiss till kod
 Jag började med att studera Figma-skissen för att förstå hur sidan var uppbyggd, vilka färger och typsnitt som användes, spacing och hur layouten ändrades mellan mobil och desktop. Jag började med mobil-layouten eftersom det var en instruktion från läraren att arbeta mobile-first. Jag byggde först HTML-strukturen och sedan CSS och delade upp CSS:en i base.css för globala regler, layout.css för struktur och layout och components.css för visuell styling.
 En av sakerna som blev kluriga var navigationen. Jag valde att göra den fixerad eftersom den alltid är synlig i designskissen. Det gjorde att sektioner inte syntes då de låg bakom navigationen när jag klickade på en ankarlänk. Jag löste det med padding-top på main som skapar plats för den fixerade navigationen och scroll-margin-top på section som gör att sektionen hamnar rätt vid navigering.
 När jag hade byggt mobil-versionen upptäckte jag att desktop-versionen i Figma egentligen var uppdelad i flera sidor. Jag frågade min lärare och fick ok på att behålla min struktur, eftersom mobilversionen är en scrollande sida och vi senare kommer att arbeta med React och TypeScript. Mina navigeringslänkar leder därför till respektive sektion på samma sida. Om jag skulle följa desktopskissen exakt skulle jag dela upp innehållet i separata HTML-sidor och länka navigationen till respektive sida.
 CSS-variabler i :root används för färger, gradient och andra återkommande värden. Det gör det enklare att ändra färger konsekvent och minskar upprepning i CSS:en. Jag använder också CSS-arv, exempelvis genom att sätta font-family och grundläggande textfärg på body, så att dessa egenskaper kan ärvas av innehållet.
 
-Semantik
+## Semantik
 Jag använder semantiska HTML-element där det passar innehållet, bland annat header, nav, main, section, article, footer, rubriker och listor.
 Exempelvis används article för varje arbetslivserfarenhet och nav för navigationen. Tech Stack och sociala länkar är uppbyggda som listor eftersom de består av flera länkar/objekt. 
 Div används där det behövs som strukturell wrapper men där det inte finns något bättre semantiskt element. Ett exempel är .experience-info, som grupperar jobbtitel, företag och plats.
@@ -43,14 +43,14 @@ Eftersom jag använder Windows testade jag Safari via BrowserStack och fick 100 
 Jag testade även dark mode och kontrollerade att text och ikoner fortfarande var läsbara.
 Jag använder prefers-color-scheme för att följa användarens systeminställning för dark mode. Vissa SVG-ikoner syntes dåligt mot den mörka bakgrunden, så jag använder filter: invert(1) på dessa i dark mode.
 
-Användbarhet
+## Användbarhet
 Jag tycker att designen använder visuell hierarki, whitespace och konsekvens på ett bra sätt. Rubrikernas storlek och färg visar vad som är viktigast, medan mellanrummen skapar tydliga avstånd mellan sektionerna. De återkommande projektkorten har samma struktur, vilket gör sidan lättare att överblicka. Den fixerade navigationen gör det enkelt att ta sig mellan sidans olika delar.
 Om jag skulle utveckla sidan vidare skulle jag göra hamburgerikonen funktionell och ersätta sociala länkar och projektlänkar med riktiga länkar.
 Styrkor och svagheter
 En styrka med projektet är att jag har fått en bättre förståelse för när Flexbox och Grid passar bäst och hur de kan kombineras. Jag är också nöjd med uppdelningen mellan base.css, layout.css och components.css, eftersom det gör koden lättare att hitta och förstå.
 En svaghet är att mobil- och desktop-layouten skiljer sig ganska mycket, vilket gjorde vissa delar mer komplicerade att anpassa responsivt. Med mer erfarenhet hade jag kunnat hitta enklare lösningar för vissa delar.
 
-AI-verktyg
+## AI-verktyg
 Jag använde AI som stöd och bollplank under utvecklingen, framför allt kring Flexbox och Grid, responsiv design, tillgänglighet och felsökning. Ett exempel är problemet med den fixerade navigationen och ankarlänkarna. Jag använde även AI för att förstå display: contents och dark mode.
 Förslagen kontrollerade jag genom att prova dem i min egen kod, anpassa dem efter designen och testa resultatet med validatorer, Lighthouse och DevTools. Jag gjorde själv de slutliga valen och implementerade lösningarna.
 
